@@ -1,0 +1,17 @@
+package com.biz.ems.service;
+
+
+
+
+
+@Slf4j
+@RequiredArgsConstructor
+@Service(value = "fileServiceV3")
+public class FileServiceImlV3 extends FileServiceImplV1{
+	
+	
+
+	
+	
+
+}

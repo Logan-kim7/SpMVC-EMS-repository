@@ -1,0 +1,38 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core"  prefix="c" %>
+<c:set var="rootPath" value="${pageContext.request.contextPath}" />        
+<script>
+
+
+
+</script>
+
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<table>
+	<thead>
+		<tr>
+			<th>발송 Email</th>
+			<th>받는 Email</th>
+			<th>발송일자</th>
+			<th>발송시각</th>
+			<th>메일제목</th>			
+		</tr>
+	</thead>
+	<tbody>
+		<c:if test="${empty EMS_LIST}">
+		<tr><td colspan="5">데이터가 없습니다.</td></tr>
+		</c:if>
+		<c:forEach items="${EMS_LIST}" var="vo" varStatus="i">
+		<tr class="bbs-tr" data-seq="${vo.b_seq}">
+						
+		
+		
+		</tr>
+		
+		</c:forEach>
+	</tbody>
+</table>

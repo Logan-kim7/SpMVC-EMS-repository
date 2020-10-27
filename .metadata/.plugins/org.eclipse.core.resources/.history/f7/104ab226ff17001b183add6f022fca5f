@@ -1,0 +1,14 @@
+package com.biz.ems.service;
+
+import org.springframework.web.multipart.MultipartFile;
+
+public interface FIleService {
+public String fileUp(MultipartFile file) {
+		
+		String filename = file.getOriginalFilename();
+		
+		String rootPath = System.getProperty("catalina.home");
+		
+	}
+	
+}

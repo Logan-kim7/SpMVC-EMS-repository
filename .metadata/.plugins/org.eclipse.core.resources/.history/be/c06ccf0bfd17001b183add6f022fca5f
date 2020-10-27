@@ -1,0 +1,5 @@
+package com.biz.ems.service;
+
+public class FileServiceImplV1 implements FIleService {
+
+}

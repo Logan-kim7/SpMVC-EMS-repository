@@ -1,0 +1,22 @@
+package com.biz.ems.model;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+@ToString
+public class ImageVO {
+	private long m_seq;
+	private long m_b_seq;
+	private String m_org_name;
+	private String m_file_name;
+	private long m_down;
+}

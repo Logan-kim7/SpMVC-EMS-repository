@@ -1,0 +1,25 @@
+package com.biz.ems.service;
+
+import javax.annotation.Resource;
+
+import org.springframework.core.io.ResourceLoader;
+import org.springframework.stereotype.Service;
+
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+
+
+@Slf4j
+@RequiredArgsConstructor
+@Service(value = "fileServiceV2")
+public class FileServiceImlV2 {
+	
+	private final ResourceLoader resourceLoader;
+	
+	
+	
+	
+	Resource resource = ResourceLoader.getResource("/static/files");
+	
+
+}

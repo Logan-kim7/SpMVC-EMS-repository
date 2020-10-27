@@ -1,0 +1,21 @@
+package com.biz.ems.mapper;
+
+import java.util.List;
+
+import com.biz.ems.model.EmsVO;
+
+public interface EmsDao {
+	
+	
+	
+	
+	public List<EmsVO> selectAll();
+	
+	
+	public EmsVO findByseq(long seq);
+	
+	
+	public int insert(EmsVO emsVO);
+	
+	public int delete(long seq);
+	}
