@@ -1,8 +1,3 @@
 INDEX VERSION 1.4+C:\bizwork\workspace\One Day Project\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-1268614597.index
-3113413862.index
-369057408.index
-3289120378.index
-4035685910.index
-3606011473.index
-3474128500.index
+4151886451.index
+627812026.index

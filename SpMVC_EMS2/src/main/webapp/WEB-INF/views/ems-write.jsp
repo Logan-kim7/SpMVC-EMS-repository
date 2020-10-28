@@ -1,0 +1,57 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<c:set var="rootPath" value="${pageContext.request.contextPath}" />
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<!--  update ? id=5  GET => 에서보내면 
+	 update ? id=5  POST => 으로 받았을때 id값이 자동으로 따라오는경우가 있다 => Long 형식을때 
+	 하지만 문자열일 경우에는 이런식으로 할수가 없다. 
+-->
+	<h3>나의 홈페이지에 온걸 환영한다.</h3>
+	<form method="POST" enctype="multipart/form-data">
+		<div>
+			<label>보내는 Email</label> <input name="from_email"
+				value="${EMS.from_email}" />
+		</div>
+		<div>
+			<label>받는 Email</label> <input name="to_email"
+				value="${EMS.to_email}" />
+		</div>
+		<div>
+			<label>보내는 날짜</label> <input name="s_date" value="${EMS.s_date}" />
+		</div>
+		<div>
+			<label>보내는 시각</label> <input name="s_time" value="${EMS.s_time}" />
+		</div>
+		<div>
+			<label>제목</label> <input name="s_subject" value="${EMS.s_subject}" />
+		</div>
+		<div>
+			<label>내용</label>
+			<textarea name="s_content">${EMS.s_content}</textarea>
+		</div>
+		<div>
+			<label>첨부파일1</label> <input name="file1" type="file" />
+		</div>
+		<div>
+			<img src="${rootPath}/files/${EMS.s_file1}" width="100px">
+		</div>
+		<div>
+			<label>첨부파일1</label> <input name="file2" type="file" />
+			<div>
+				<img src="${rootPath}/files/${EMS.s_file2}" width="100px">
+			</div>
+		</div>
+		<div>
+			<button>저장</button>
+		</div>
+	</form>
+</body>
+</html>
