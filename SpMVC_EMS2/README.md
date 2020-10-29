@@ -44,7 +44,7 @@
 		<bean class="org.springframework.mail.javamail.JavaMailSenderImpl">
 		<property name="host" value="smtp.gmail.com"/>
 		<property name="port" value="465"/>
-		<property name="username" value="네이버ID"/>
+		<property name="username" value="googleID@gmil.com"/>
 		<property name="password" value=""/>
 		<property name="javaMailProperties">
 		

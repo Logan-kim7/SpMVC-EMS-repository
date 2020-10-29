@@ -74,11 +74,11 @@ public class NaverMailSendService {
 			
 			//본문에 첨부파일을 첨가하여 전달하기
 			FileSystemResource rs = null;
-			if(!s_file1.isEmpty()) {
+			if(s_file1 != null && !s_file1.isEmpty()) {
 				rs = new FileSystemResource(new File(uploadFolder, s_file1));
 				mHelper.addAttachment(s_file1, rs);
 			}
-			if(!s_file2.isEmpty()) {
+			if(s_file2 != null && !s_file2.isEmpty()) {
 				rs = new FileSystemResource(new File(uploadFolder,s_file2));
 				mHelper.addAttachment(s_file2, rs);
 			}
