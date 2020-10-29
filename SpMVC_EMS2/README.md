@@ -15,3 +15,51 @@
 ### DELETE를 수행할때
 * 먼저 첨부파일을 모두 삭제한 후 
 * Table의 데이터를 삭제
+
+
+## naver SMTP 설정 값들
+
+		<bean class="org.springframework.mail.javamail.JavaMailSenderImpl">
+		<property name="host" value="smtp.naver.com"/>
+		<property name="port" value="465"/>
+		<property name="username" value="네이버ID"/>
+		<property name="password" value=""/>
+		<property name="javaMailProperties">
+		
+		
+			<props>
+				<prop key="mail.transport.protocol">smtp</prop>
+				<prop key="mail.smtp.auth">true</prop>
+				<prop key="mail.smtp.starttls.enable">true</prop>
+				<prop key="mail.smtp.ssl.enable">true</prop>
+				<prop key="mail.smtp.ssl.trust">smtp.naver.com</prop>
+				<prop key="mail.debug">true</prop>
+			</props>
+		</property>
+		
+	</bean>
+
+### gmail SMTP 설정값들
+
+		<bean class="org.springframework.mail.javamail.JavaMailSenderImpl">
+		<property name="host" value="smtp.gmail.com"/>
+		<property name="port" value="465"/>
+		<property name="username" value="네이버ID"/>
+		<property name="password" value=""/>
+		<property name="javaMailProperties">
+		
+		
+			<props>
+				<prop key="mail.transport.protocol">smtp</prop>
+				<prop key="mail.smtp.auth">true</prop>
+				<prop key="mail.smtp.starttls.enable">true</prop>
+				<prop key="mail.smtp.ssl.enable">true</prop>
+				<prop key="mail.smtp.ssl.trust">smtp.gmail.com</prop>
+				<prop key="mail.debug">true</prop>
+			</props>
+		</property>
+		
+	</bean>
+
+
+
